@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <title>Động Lực và Tư Duy</title>
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target=".navbar">
+        <div class="navbar navbar-expand-lg sticky-top bg-primary" data-bs-theme="dark">
+            <div class="container">
+                <a href="https://www.coderschool.vn/vi" class="navbar-brand" target="_blank" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" data-bs-original-title="Trang chủ của CoderScool">CoderSchool</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarResponsive" style="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.coderschool.vn/vi/cs50">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item dropdown d-lg-none">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="themes">Mục
+                                Lục</a>
+                            <div class="dropdown-menu" aria-labelledby="themes">
+                                <a class="dropdown-item" href="#headingOne" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Mở
+                                    Đầu</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#headingTwo" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Động
+                                    Lực</a>
+                                <a class="dropdown-item" href="#headingThree" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="true"
+                                    aria-controls="collapseThree">Tư Duy</a>
+                                <a class="dropdown-item" href="#headingFour" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Quá
+                                    Trình Học Tập</a>
+                                <a class="dropdown-item" href="#headingFive" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">Bạn
+                                    Cần Làm Gì Khi Gặp Khó Khăn</a>
+                                <a class="dropdown-item" href="#headingSix" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">Những
+                                    Chú Ý Khi Sử Dụng AI</a>
+                                <a class="dropdown-item" href="#headingSeven" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="true"
+                                    aria-controls="collapseSeven">Cách Quản Lý Thời Gian</a>
+                                <a class="dropdown-item" href="#headingEight" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="true"
+                                    aria-controls="collapseEight">Những Lối Mòn / Thói Quen Cần Tránh</a>
+                                <a class="dropdown-item" href="#headingNine" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">Kết
+                                    Luận</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="download"
+                                aria-expanded="false">Khóa CS50</a>
+                            <div class="dropdown-menu" aria-labelledby="download">
+                                <a class="dropdown-item" rel="noopener" target="_blank"
+                                    href="https://cs50.harvard.edu/x/2024/">CS50x 2024</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/0/"
+                                    target="_blank">Tuần 0 <span class="text-warning">Scratch</span></a>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/0/"
+                                    target="_blank">Problem Set 0</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/1/"
+                                    target="_blank">Tuần 1 <span class="text-warning">C</span></a>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/1/"
+                                    target="_blank">Problem Set 1</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/2/"
+                                    target="_blank">Tuần 2 <span class="text-warning">Arrays</span></a>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/2/"
+                                    target="_blank">Problem Set 2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/3/"
+                                    target="_blank">Tuần 3 <span class="text-warning">Algorithms</span></a>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/3/"
+                                    target="_blank">Problem Set 3</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/4/"
+                                    target="_blank">Tuần 4 <span class="text-warning">Memory</span></a>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/4/"
+                                    target="_blank">Problem Set 4</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/5/"
+                                    target="_blank">Tuần 5 <span class="text-warning">Data Structures</span></a>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/5/"
+                                    target="_blank">Problem Set 5</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/6/"
+                                    target="_blank">Tuần 6 & 6.5 <span class="text-warning">Python & Artificial
+                                        Intelligence</span></a>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/6/"
+                                    target="_blank">Problem Set 6</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/7/"
+                                    target="_blank">Tuần 7 <span class="text-warning">SQL</span></a>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/7/"
+                                    target="_blank">Problem Set 7</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/8/"
+                                    target="_blank">Tuần 8 <span class="text-warning">HTML, CSS, JavaScript</span></a>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/8/"
+                                    target="_blank">Problem Set 8</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/9/"
+                                    target="_blank">Tuần 9 <span class="text-warning">Flask</span></a>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/9/"
+                                    target="_blank">Problem Set 9</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/10/"
+                                    target="_blank">Tuần 10 <span class="text-warning">Cybersecurity</span></a>
+                                <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/project/"
+                                    target="_blank">Final Project</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-md-auto">
+                        <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-original-title="AI CS50">
+                            <a target="_blank" rel="noopener" class="nav-link" href="https://cs50.ai/"><i
+                                    class="bi bi-laptop"></i><span class="d-lg-none ms-2">CS50.ai</span></a>
+                        </li>
+                        <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-original-title="CS50 Visual Studio Code">
+                            <a target="_blank" rel="noopener" class="nav-link" href="https://cs50.dev/"><i
+                                    class="bi bi-github"></i><span class="d-lg-none ms-2">CS50
+                                    CodeSpace</span></a>
+                        </li>
+                        <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-original-title="Kênh Discord của CoderSchool">
+                            <a target="_blank" rel="noopener" class="nav-link"
+                                href="https://discord.com/channels/1233260164233297940/1236952672762859520"><i
+                                    class="bi bi-discord"></i><span class="d-lg-none ms-2">Discord</span></a>
+                        </li>
+                        <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                            <hr class="d-lg-none my-2 text-white-50">
+                        </li>
+                        <li class="nav-item dropdown" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-original-title="Chọn Giao Diện">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="theme-menu"
+                                aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
+                                aria-label="Toggle theme">
+                                <i class="bi bi-circle-half"></i>
+                                <span class="d-lg-none ms-2">Giao Diện</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center"
+                                        data-bs-theme-value="light" aria-pressed="false">
+                                        <i class="bi bi-sun-fill"></i><span class="ms-2">Sáng</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center"
+                                        data-bs-theme-value="dark" aria-pressed="true">
+                                        <i class="bi bi-moon-stars-fill"></i><span class="ms-2">Tối</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <header>
+                <div class="row">
+                    <div class="col-lg-8 col-md-7 col-sm-6">
+                        <h1>Học Lập Trình</h1>
+                        <span class="fst-italic">Biến ý tưởng thành hiện thực qua từng dòng code.</span>
+                    </div>
+                </div>
+            </header>
+            <div class="row mt-5">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <div class="accordion" id="accordionMenu">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h5 class="text-uppercase">Mở Đầu</h5>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionMenu" style="">
+                                <div class="accordion-body">
+                                    <p><strong>Học lập trình</strong> là một hành trình vô cùng bổ ích, nhưng đôi khi
+                                        cũng đầy thử thách và dễ khiến
+                                        bạn nản lòng. Tương tự như các kỹ năng khác, việc học lập trình đòi hỏi thời
+                                        gian và công sức. Bạn không thể thành thạo nó chỉ trong một tuần hay thậm chí
+                                        vài tháng. Tuy
+                                        nhiên, mình tin rằng bất kỳ ai cũng có thể học lập trình nếu họ kiên trì và sẵn
+                                        lòng
+                                        đầu tư thời gian.</p>
+
+                                    <p>Trước khi bước vào nội dung của chương trình học, chúng ta sẽ đi qua những yếu tố
+                                        quan trọng
+                                        giúp bạn thành công cũng như các lối mòn cần tránh để tận dụng đối đa khóa học
+                                        này. <strong>Hãy kiên
+                                            trì</strong> vượt qua những khó khăn ban
+                                        đầu, <strong>ngày thành công sẽ không xa!</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h5 class="text-uppercase">Động Lực</h5>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionMenu">
+                                <div class="accordion-body">
+                                    <p>Chúng ta hãy dành một chút thời gian để suy nghĩ về lý do bạn quyết định học lập
+                                        trình.</p>
+                                    <ul>
+                                        <li class="mb-2">Có phải là vì bạn muốn có một sự nghiệp đáng giá với thu
+                                            nhập cao?</li>
+                                        <li class="mb-2">Là do bạn đam mê, thu hút bởi sự sáng tạo và tự do mà lập trình
+                                            mang lại?</li>
+                                        <li class="mb-2">Vì bạn quyết tâm phát triển kỹ năng và khả năng
+                                            để xây dựng ứng dụng hữu ích cho đời?</li>
+                                        <li class="mb-2">Hay là vì bạn muốn bắt đầu công ty riêng của mình bằng
+                                            cách biến ý tưởng ứng dụng thành hiện thực?</li>
+                                    </ul>
+                                    <p>Có thể động lực của bạn bao gồm những ý trên hoặc thậm chí những lí do hoàn toàn
+                                        khác. Dù là gì đi nữa, hãy giữ <strong>ngọn lửa</strong> đó trong tim của bạn vì
+                                        điều đó sẽ thúc đẩy và giúp bạn vượt qua hành trình này cũng như dẫn đường cho
+                                        bạn đến một mục tiêu cụ thể.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h5 class="text-uppercase">Tư Duy</h5>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionMenu">
+                                <div class="accordion-body">
+                                    <p><strong>Tư duy</strong> của bạn rất quan trọng khi tự học bất kỳ kỹ năng mới nào,
+                                        không chỉ là lập trình. Tư duy của bạn sẽ ảnh hưởng nhiều hơn đến khả năng thành
+                                        công của bạn so
+                                        với hầu hết các yếu tố khác.</p>
+                                    <p>Thông thường mọi người nghĩ rằng nếu họ không thành công trong điều gì đó trong
+                                        lần thử đầu tiên, họ sẽ không bao giờ làm được. Họ tin rằng mình không đủ thông
+                                        minh để
+                                        hiểu hoặc làm một số việc.</p>
+                                    <p>Tuy nhiên, với lượng lớn nghiên cứu cho thấy rằng trí thông minh không phải là
+                                        cố định mà có thể được phát triển. Với một tư duy tăng mở và cầu tiến, kết hợp
+                                        với nỗ lực và kiên trì, chúng ta có thể cải thiện mọi thứ.</p>
+                                    <p>Điều này có ý nghĩa gì đối với chúng ta? Nó mang lại niềm tin là bạn có thể học
+                                        các kỹ năng mới à phát triển tài năng mới với sự kiên trì và quyết tâm.</p>
+                                    <p>Trong suốt khóa CS50 này, sẽ có nhiều lúc bạn gặp khó khăn với một khái niệm
+                                        hoặc một vấn đề lập trình và hoài nghi về khả năng của mình.
+                                        Khi gặp phải tình huống này, hãy nhắc nhở bản thân rằng bạn có thể chưa hiểu
+                                        ngay lập tức nhưng bạn sẽ làm được, hãy kiên nhẫn với bản thân. <strong>"No
+                                            pain no gain."</strong> Hãy động viên bản thân rằng những chông gai này để
+                                        làm thành
+                                        công của mình thêm vẻ vang, và khi vượt qua bạn sẽ vươn tới một tầm cao mới. Vì
+                                        vậy đừng quên ăn mừng, chia sẻ thành công của mình trong những phút giây
+                                        thăng hoa đó!</p>
+                                    <p>Khi bạn hoài nghi về khả năng của mình, hãy suy nghĩ về những thành công mà bạn
+                                        đã đạt được trong khi học lập trình: những bài tập bạn đã hoàn thành và những
+                                        khái
+                                        niệm mà bạn từng không hiểu nhưng bây giờ đã hiểu. Đây là tất cả các bằng chứng
+                                        cho thấy rằng bạn có thể làm được.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <h5 class="text-uppercase">Quá trình học tập</h5>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionMenu">
+                                <div class="accordion-body">
+                                    <p>Việc học các khái niệm và sau đó thực hành chúng sẽ giúp bạn hiểu rõ hơn về cách
+                                        các thứ hoạt động và kết hợp với nhau. Các <strong>problem sets</strong> là được
+                                        tạo ra để đảm
+                                        bảo rằng hiểu biết lý thuyết của bạn khớp với cách các khái niệm và ứng dụng
+                                        trong thực tế.</p>
+                                    <p>Khi học, tâm trí của bạn sẽ liên tục chuyển đổi giữa chế độ <strong>tập
+                                            trung</strong> (focused) và
+                                        <strong>lan toả</strong> (diffuse).
+                                        Với chế độ tập trung, não bộ của chúng ta xử lý từng thông tin riêng lẻ một cách
+                                        tỉ mĩ, còn với chế độ lan tỏa, não bộ thường xử lý một lượng thông tin lớn hơn
+                                        nhưng không đi vào phân tích sâu. Cũng giống như đèn pin thường có hai chế độ:
+                                        một chế độ chiếu sáng tập trung vào một điểm, giúp người ta tìm kiếm một vật cụ
+                                        thể, chế độ còn lại phân tán ánh sáng ra xung quanh giúp người ta có tầm nhìn
+                                        rộng hơn. Đây là thời điểm mà não bộ bạn sẽ kết nối những gì bạn đã học với
+                                        những điều khác mà bạn biết.
+                                    </p>
+                                    <p><code>Vậy suy nghĩ nào quan trọng hơn?</code></p>
+                                    <p>Câu trả lời là <strong>không có</strong> trạng thái nào quan trọng hơn cả. Nghe
+                                        thì có vẻ hai
+                                        trạng thái này trái ngược nhau, nhưng thực chất chúng lại bổ trợ cho nhau.
+                                        Chúng ta cần luân phiên giữa hai chế độ này để mang lại kết quả cao nhất. Khi bị
+                                        không hiểu một khái niệm hoặc bị "bí" với bài tập, việc nghỉ ngơi hồi phục tâm
+                                        trí và tạo thời gian để
+                                        tiềm thức của bạn kết nối thông tin thường mang lại giải pháp cho vấn đề của
+                                        bạn. (Nhớ là nỗ lực giải quyết vấn đề trước tiên và sau đó nghỉ ngơi)</p>
+
+                                    <code>Mẹo: Tiếp thu kiến thức, thực hành kiến thức và cuối cùng là hướng dẫn kiến thức cho người khác.</code>
+                                    <p>Hướng dẫn và chia sẻ những gì bạn biết cho người khác là một cách tuyệt vời để
+                                        củng cố những gì bạn đã học và thường giúp bạn phát hiện ra những lỗ hổng trong
+                                        kiến thức của bạn mà bạn không thể nhận ra nếu không có trải nghiệm này.</p>
+
+                                    <p>Bạn có thể thực hành phương pháp học này bằng cách chia sẻ bài tập, thắc mắc và
+                                        giúp đỡ những người khác trong cộng đồng của <a
+                                            href="https://discord.com/channels/1233260164233297940/1236952672762859520">CS50
+                                            CoderSchool</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <h5 class="text-uppercase">Bạn cần làm gì khi gặp khó khăn?!</h5>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionMenu">
+                                <div class="accordion-body">
+                                    <p>Nội dung</p>
+                                    <div></div>
+                                    <img src="./assets/images/00.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <h5 class="text-uppercase">Những chú ý khi sử dụng AI</h5>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionMenu">
+                                <div class="accordion-body">
+                                    <p>Nội dung</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    <h5 class="text-uppercase">Cách quản lý thời gian</h5>
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionMenu">
+                                <div class="accordion-body">
+                                    <p>Nội dung</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    <h5 class="text-uppercase">Những lối mòn/thói quen cần tránh</h5>
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionMenu">
+                                <div class="accordion-body">
+                                    <p>Nội dung</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    <h5 class="text-uppercase">Kết luận</h5>
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                                data-bs-parent="#accordionMenu">
+                                <div class="accordion-body">
+                                    <p>Nội dung</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-lg-block d-md-none d-sm-none">
+                    <div class="card shadow ">
+                        <div class="card-body">
+                            <h4 class="card-title">Mục Lục:</h4>
+                            <ul class="list-group">
+                                <li
+                                    class="list-group-item list-group-item-primary d-flex justify-content-between align-items-center">
+                                    <a class="dropdown-item" href="#headingOne" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">Mở Đầu</a>
+                                </li>
+                                <li
+                                    class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="dropdown-item" href="#headingTwo" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="true"
+                                        aria-controls="collapseTwo">Động Lực</a>
+                                </li>
+                                <li
+                                    class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="dropdown-item" href="#headingThree" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="true"
+                                        aria-controls="collapseThree">Tư Duy</a>
+                                </li>
+                                <li
+                                    class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="dropdown-item" href="#headingFour" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="true"
+                                        aria-controls="collapseFour">Quá Trình Học Tập</a>
+                                </li>
+                                <li
+                                    class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="dropdown-item" href="#headingFive" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="true"
+                                        aria-controls="collapseFive">Bạn Cần Làm Gì Khi Gặp Khó Khăn</a>
+                                </li>
+                                <li
+                                    class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="dropdown-item" href="#headingSix" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="true"
+                                        aria-controls="collapseSix">Những Chú Ý Khi Sử Dụng AI</a>
+                                </li>
+                                <li
+                                    class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="dropdown-item" href="#headingSeven" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="true"
+                                        aria-controls="collapseSeven">Cách Quản Lý Thời Gian</a>
+                                </li>
+                                <li
+                                    class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="dropdown-item" href="#headingEight" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEight" aria-expanded="true"
+                                        aria-controls="collapseEight">Những Lối Mòn / Thói Quen Cần Tránh</a>
+                                </li>
+                                <li
+                                    class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="dropdown-item" href="#headingNine" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseNine" aria-expanded="true"
+                                        aria-controls="collapseNine">Kết Luận</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+            <script src="./assets/js/main.js"></script>
+    </body>
+
+</html>

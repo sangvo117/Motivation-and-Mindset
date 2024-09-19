@@ -21,7 +21,7 @@
             <div class="navbar-collapse collapse" id="navbarResponsive" style="">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html" target="_blank">Giới thiệu</a>
+                        <a class="nav-link" href="./index.html">Giới thiệu</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="download"
@@ -89,7 +89,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./askingTechnicalQuestions.html" target="_blank">Cách đặt câu
+                        <a class="nav-link" href="./askingTechnicalQuestions.html">Cách đặt câu
                             hỏi</a>
                     </li>
                 </ul>
@@ -155,55 +155,101 @@
         </header>
         <div class="row mt-5">
             <div class="col-lg-8 col-md-12 col-sm-12">
-                <section>
-                    <h3>Trước khi đặt câu hỏi</h3>
-                    <p>Trước khi yêu cầu sự giúp đỡ, hãy tự nghiên cứu và thử giải quyết vấn đề của bạn. Điều này giúp
-                        bạn
-                        học hỏi và hiểu biết thêm về những khái niệm và đồng thời phát triển khả năng tư duy, giải quyết
-                        vấn
-                        đề.</p>
-                </section>
-                <section class="mt-5">
-                    <h3>Chuẩn bị câu hỏi của bạn</h3>
-                    <div class="mt-4">
-                        <h5>Xác định vấn đề cụ thể</h5>
-                        <p>Mô tả vấn đề cụ thể và nêu rõ những gì bạn đã làm để giải quyết vấn đề đó. Điều này giúp
-                            người
-                            khác hiểu
-                            rõ hơn về vấn đề của bạn và cung cấp sự hỗ trợ chính xác.</p>
+                <div class="accordion" id="accordionMenu">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h6 class="text-uppercase">Trước khi đặt câu hỏi</h6>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionMenu" style="">
+                            <div class="accordion-body">
+                                <p>Trước khi yêu cầu sự giúp đỡ, hãy tự nghiên cứu và thử giải quyết vấn đề của bạn.
+                                    Điều này giúp
+                                    bạn
+                                    học hỏi và hiểu biết thêm về những khái niệm và đồng thời phát triển khả năng tư
+                                    duy, giải quyết
+                                    vấn
+                                    đề.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mt-4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h6 class="text-uppercase">Chuẩn bị câu hỏi của bạn</h6>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionMenu">
+                            <div class="accordion-body">
+                                <div>
+                                    <h6>Xác định vấn đề cụ thể</h6>
+                                    <p class="ms-4">Mô tả vấn đề cụ thể và nêu rõ những gì bạn đã làm để giải quyết vấn
+                                        đề đó. Điều
+                                        này giúp
+                                        người
+                                        khác hiểu
+                                        rõ hơn về vấn đề của bạn và cung cấp sự hỗ trợ chính xác.</p>
+                                </div>
+                                <div>
+                                    <h6>Cung cấp code, pseudo-code hoặc ngữ cảnh</h6>
+                                    <p class="ms-4">Bạn hãy cung cấp đoạn code của mình cùng với thông báo lỗi cụ thể
+                                        (bằng hình ảnh
+                                        nếu có.). Để
+                                        post code của mình
+                                        trên discord dễ đọc thì các bạn hãy thực hiện theo hướng dẫn <a
+                                            href="https://discord.com/channels/1233260164233297940/1236952672762859520/1244617925307142224"
+                                            target="_blank">này</a> của Miro.
+                                    </p>
+                                    <p class="ms-4">Bên cạnh đó hãy mô tả ngữ cảnh của vấn đề sẽ giúp cho người khác
+                                        hiểu rõ hơn,
+                                        chẳng hạn như
+                                        bạn
+                                        đang muốn làm điều gì, lý do vì sao bạn chọn cách làm này, ... </p>
+                                </div>
+                                <div>
+                                    <h6>Hỏi về cách giải quyết vấn đề hiện tại chứ không phải đáp án</h6>
+                                    <p class="ms-4"><strong>Không nên:</strong> "Làm thế nào để hoàn thành problem set
+                                        1, bài Cash?"
+                                    </p>
+                                    <p class="ms-4"><strong>Nên:</strong> "Mình đang cố gắng trả về số dư sau khi đổi ra
+                                        <code>quarters (25¢)</code>, nhưng gặp lỗi <code>logic</code> vì số dư nhận về
+                                        không đúng.
+                                        Mình phải sửa lỗi này thế
+                                        nào? Đây là đoạn code của mình."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h6 class="text-uppercase">Khi nhận được sự giúp đỡ</h6>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionMenu">
+                            <div class="accordion-body">
+                                <p><strong>Theo dõi và cập nhật:</strong> Khi bạn nhận được sự hỗ trợ, hãy theo dõi và
+                                    cập nhật với
+                                    bất kỳ thông tin bổ sung nào nếu cần. Điều này giúp người hỗ trợ hiểu rõ hơn về tình
+                                    hình và
+                                    tiếp tục giúp đỡ bạn.</p>
+                                <p><strong>Chia sẻ kết quả:</strong> Nếu bạn đã tìm ra giải pháp cho vấn đề của mình,
+                                    hãy chia sẻ
+                                    kết quả với người khác. Điều này giúp cộng đồng học hỏi từ kinh nghiệm của bạn.</p>
 
-                        <h5>Cung cấp code, pseudo-code hoặc ngữ cảnh</h5>
-                        <p>Bạn hãy cung cấp đoạn code của mình cùng với thông báo lỗi cụ thể (bằng hình ảnh nếu có.). Để
-                            post code của mình
-                            trên discord dễ đọc thì các bạn hãy thực hiện theo hướng dẫn <a
-                                href="https://discord.com/channels/1233260164233297940/1236952672762859520/1244617925307142224"
-                                target="_blank">này</a> của Miro.
-                        </p>
-                        <p>Bên cạnh đó hãy mô tả ngữ cảnh của vấn đề sẽ giúp cho người khác hiểu rõ hơn, chẳng hạn như
-                            bạn
-                            đang muốn làm điều gì,... </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mt-4">
-                        <h5>Hỏi về cách giải quyết vấn đề hiện tại chứ không phải đáp án</h5>
-                        <p><strong>Không nên:</strong> "Làm thế nào để hoàn thành problem set 1, bài Cash?"</p>
-                        <p><strong>Nên:</strong> "Mình đang cố gắng trả về số dư sau khi đổi ra
-                            <code>quarters (25¢)</code>, nhưng gặp lỗi <code>logic</code> vì số dư nhận về không đúng.
-                            Mình phải sửa lỗi này thế
-                            nào? Đây là đoạn code của mình."
-                        </p>
-                    </div>
-                </section>
 
-                <section class="my-5">
-                    <h3>Khi nhận được sự giúp đỡ</h3>
-                    <p><strong>Theo dõi và cập nhật:</strong> Khi bạn nhận được sự hỗ trợ, hãy theo dõi và cập nhật với
-                        bất kỳ thông tin bổ sung nào nếu cần. Điều này giúp người hỗ trợ hiểu rõ hơn về tình hình và
-                        tiếp tục giúp đỡ bạn.</p>
-                    <p><strong>Chia sẻ kết quả:</strong> Nếu bạn đã tìm ra giải pháp cho vấn đề của mình, hãy chia sẻ
-                        kết quả với người khác. Điều này giúp cộng đồng học hỏi từ kinh nghiệm của bạn.</p>
-                </section>
+                </div>
             </div>
         </div>
 

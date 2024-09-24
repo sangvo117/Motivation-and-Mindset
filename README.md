@@ -22,7 +22,7 @@ This project is a website designed to support students on their journey through 
 
 - **Motivational Quotes**: A curated selection of quotes to inspire and energize students as they work through the course.
 - **Study Tips**: Practical advice on time management, focus, and perseverance for tackling the challenges of CS50x.
-- **Mindset Development**: Tips to develop the growth mindset and promote collaborative learning for learning computer science.
+- **Mindset Development**: Tips to develop the growth mindset and promote collaborative learning for computer science.
 - **Additional Resources**: Helpful links to supplemental study materials and tips for improving mental well-being during the course.
 
 ## Access the Website

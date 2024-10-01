@@ -12,6 +12,21 @@ This project is a website designed to support students on their journey through 
 - **Target Audience**:
   - Students preparing for or currently enrolled in the CS50x course under Minh Hodler through CoderSchool.
 
+## Topics Covered
+
+1. [Mở Đầu](#headingOne)
+2. [Động Lực](#headingTwo)
+3. [Tư Duy](#headingThree)
+4. [Quá Trình Học Tập](#headingFour)
+5. [Bạn Cần Làm Gì Khi Gặp Khó Khăn](#headingFive)
+6. [Những Chú Ý Khi Sử Dụng AI](#headingSix)
+7. [Cách Quản Lý Thời Gian](#headingSeven)
+8. [Những Lối Mòn / Thói Quen Cần Tránh](#headingEight)
+9. [Kết Luận](#headingNine)
+
+- **Additional Resources**:
+  - [Cách Đặt Câu Hỏi](./askingTechnicalQuestions.html)
+
 ## Technologies Used
 
 - **HTML5**: For structuring and organizing content on the website.

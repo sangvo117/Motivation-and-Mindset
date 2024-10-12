@@ -25,7 +25,8 @@ This project is a website designed to support students on their journey through 
 9. [Kết Luận](#headingNine)
 
 - **Additional Resources**:
-  - [Cách Đặt Câu Hỏi](https://sangvo117.github.io/Motivation-and-Mindset/askingTechnicalQuestions.html)
+  - [Hướng Dẫn Đặt Câu Hỏi trên Discord](https://sangvo117.github.io/Motivation-and-Mindset/askingTechnicalQuestions.html)
+  - [Hướng Dẫn Truy Cập CS50 Codespace](https://sangvo117.github.io/Motivation-and-Mindset/accessingCs50Codespace.html)
 
 ## Technologies Used
 

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <title>Động Lực và Tư Duy</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <div class="navbar navbar-expand-lg sticky-top bg-primary" data-bs-theme="dark">
+        <div class="container">
+            <a href="https://www.coderschool.vn/vi/cs50" class="navbar-brand" target="_blank" data-bs-toggle="tooltip"
+                data-bs-placement="bottom" data-bs-original-title="Trang chủ của CoderScool">Trại Code x
+                CoderSchool</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarResponsive" style="">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Tư Duy và Động Lực</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="cs50"
+                            aria-expanded="false">Khóa CS50</a>
+                        <div class="dropdown-menu" aria-labelledby="cs50">
+                            <a class="dropdown-item" rel="noopener" target="_blank"
+                                href="https://cs50.harvard.edu/x/2024/">CS50x 2024</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/0/"
+                                target="_blank">Tuần 0 <span class="text-warning">Scratch</span></a>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/0/"
+                                target="_blank">Problem Set 0</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/1/"
+                                target="_blank">Tuần 1 <span class="text-warning">C</span></a>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/1/"
+                                target="_blank">Problem Set 1</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/2/"
+                                target="_blank">Tuần 2 <span class="text-warning">Arrays</span></a>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/2/"
+                                target="_blank">Problem Set 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/3/"
+                                target="_blank">Tuần 3 <span class="text-warning">Algorithms</span></a>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/3/"
+                                target="_blank">Problem Set 3</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/4/"
+                                target="_blank">Tuần 4 <span class="text-warning">Memory</span></a>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/4/"
+                                target="_blank">Problem Set 4</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/5/"
+                                target="_blank">Tuần 5 <span class="text-warning">Data Structures</span></a>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/5/"
+                                target="_blank">Problem Set 5</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/6/"
+                                target="_blank">Tuần 6 & 6.5 <span class="text-warning">Python & Artificial
+                                    Intelligence</span></a>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/6/"
+                                target="_blank">Problem Set 6</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/7/"
+                                target="_blank">Tuần 7 <span class="text-warning">SQL</span></a>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/7/"
+                                target="_blank">Problem Set 7</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/8/"
+                                target="_blank">Tuần 8 <span class="text-warning">HTML, CSS, JavaScript</span></a>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/8/"
+                                target="_blank">Problem Set 8</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/9/"
+                                target="_blank">Tuần 9 <span class="text-warning">Flask</span></a>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/9/"
+                                target="_blank">Problem Set 9</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/10/"
+                                target="_blank">Tuần 10 <span class="text-warning">Cybersecurity</span></a>
+                            <a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/project/"
+                                target="_blank">Final Project</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="tips"
+                            aria-expanded="false">Hướng dẫn</a>
+                        <div class="dropdown-menu" aria-labelledby="tips">
+                            <a class="dropdown-item" href="./askingTechnicalQuestions.html">Đặt Câu
+                                Hỏi Trên Discord</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./accessingCs50Codespace.html">Truy Cập CS50
+                                Codespace</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                        <hr class="d-lg-none my-2 text-white-50">
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="helpful_links"
+                            aria-expanded="false">Helpful Links</a>
+                        <div class="dropdown-menu" aria-labelledby="helpful_links">
+                            <a class="dropdown-item" target="_blank" rel="noopener" href="https://cs50.me/cs50x"><i
+                                    class="bi bi-clipboard2-data"></i> Xem Tiến Độ Hiện Tại</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" target="_blank" rel="noopener" href="https://cs50.ai/"><i
+                                    class="bi bi-laptop"></i> CS50 AI</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" target="_blank" rel="noopener" href="https://cs50.dev/"><i
+                                    class="bi bi-terminal"></i> CS50 CodeSpace</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./additionalPractice.html"><i class="bi bi-book"></i>
+                                Exercise Links</a>
+                        </div>
+                    </li>
+                    <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                        <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                        <hr class="d-lg-none my-2 text-white-50">
+                    </li>
+                    <li class="nav-item dropdown" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-original-title="Chọn Giao Diện">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="theme-menu"
+                            aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
+                            aria-label="Toggle theme">
+                            <i class="bi bi-circle-half"></i>
+                            <span class="d-lg-none ms-2">Giao Diện</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="warning" aria-pressed="false">
+                                    <i class="bi bi-sun-fill"></i><span class="ms-2">Sáng</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="bi bi-moon-stars-fill"></i><span class="ms-2">Tối</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <header>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-sm-6">
+                    <h1>Bài Tập Làm Thêm</h1>
+                    <figcaption class="blockquote-footer mt-2">
+                        Lập trình không phải là về những gì bạn biết, mà là về những gì bạn có thể sáng tạo.
+                    </figcaption>
+                </div>
+            </div>
+        </header>
+        <div class="row mt-5">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <div class="accordion" id="accordionMenu">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h6 class="text-uppercase">Nửa đầu tuần 1</h6>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionMenu" style="">
+                            <div class="accordion-body">
+                                <h5 class="card-title mb-3">Expression</h5>
+                                <ul class="list-group">
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                        <a href="https://www.codestepbystep.com/r/problem/view/c/expressions/expressions1"
+                                            class="card-link" target="_blank" rel="noopener">Expressions 1</a>
+                                        <span class="badge bg-primary">Mandatory</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
+                                        <a href="https://www.codestepbystep.com/r/problem/view/cpp/expressions/expressionsExam1"
+                                            class="card-link" target="_blank" rel="noopener">Expressions Exam 1</a>
+                                        <span class="badge bg-primary">Mandatory</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+                                        <a href="https://www.codestepbystep.com/r/problem/view/cpp/expressions/expressionsExam2"
+                                            class="card-link" target="_blank" rel="noopener">Expressions Exam 2</a>
+                                        <span class="badge bg-secondary">Optional</span>
+                                    </li>
+                                </ul>
+                                <h5 class="card-title my-3">Function</h5>
+                                <ul class="list-group">
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                        <a href="https://www.codestepbystep.com/r/problem/view/c/basics/basic_function_calls"
+                                            class="card-link" target="_blank" rel="noopener">Basic Function Calls</a>
+                                        <span class="badge bg-primary">Mandatory</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
+                                        <a href="https://www.codestepbystep.com/r/problem/view/c/basics/function_tracing1"
+                                            class="card-link" target="_blank" rel="noopener">Function Tracing 1</a>
+                                        <span class="badge bg-primary">Mandatory</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                        <a href="https://www.codestepbystep.com/problem/view/c/parameters/average_of_3"
+                                            class="card-link" target="_blank" rel="noopener">Average of 3</a>
+                                        <span class="badge bg-primary">Mandatory</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
+                                        <a href="https://www.codestepbystep.com/r/problem/view/c/basics/function_tracing2"
+                                            class="card-link" target="_blank" rel="noopener">Function Tracing 2</a>
+                                        <span class="badge bg-secondary">Optional</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+                                        <a href="https://www.codestepbystep.com/r/problem/view/c/basics/function_tracing3"
+                                            class="card-link" target="_blank" rel="noopener">Function Tracing 3</a>
+                                        <span class="badge bg-secondary">Optional</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h6 class="text-uppercase">Nửa sau tuần 1</h6>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionMenu">
+                            <div class="accordion-body">
+                                <h5 class="card-title mb-3">If Else</h5>
+                                <ul class="list-group">
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                        <a href="https://www.codestepbystep.com/problem/view/c/parameters/days_in_month"
+                                            class="card-link" target="_blank" rel="noopener">Days in Month</a>
+                                        <span class="badge bg-primary">Mandatory</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
+                                        <a href="https://www.codestepbystep.com/problem/view/c/parameters/is_multiple"
+                                            class="card-link" target="_blank" rel="noopener">Is Multiple</a>
+                                        <span class="badge bg-primary">Mandatory</span>
+                                    </li>
+                                </ul>
+                                <h5 class="card-title my-3">Single Loop</h5>
+                                <ul class="list-group">
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                        <a href="https://www.codestepbystep.com/r/problem/view/c/loops/compute_sum_of_digits"
+                                            class="card-link" target="_blank" rel="noopener">Compute Sum of Digits</a>
+                                        <span class="badge bg-primary">Mandatory</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
+                                        <a href="https://www.codestepbystep.com/r/problem/view/c/parameters/sum_of_range"
+                                            class="card-link" target="_blank" rel="noopener">Sum of Range</a>
+                                        <span class="badge bg-primary">Mandatory</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                        <a href="https://www.codestepbystep.com/r/problem/view/c/parameters/is_prime_number"
+                                            class="card-link" target="_blank" rel="noopener">Is Prime Number</a>
+                                        <span class="badge bg-secondary">Optional</span>
+                                    </li>
+                                    <h5 class="card-title my-3">Nested Loop</h5>
+                                    <ul class="list-group">
+                                        <li
+                                            class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                            <a href="https://www.codestepbystep.com/r/problem/view/c/loops/print_triangle"
+                                                class="card-link" target="_blank" rel="noopener">Print Triangle</a>
+                                            <span class="badge bg-primary">Mandatory</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
+                                            <a href="https://www.codestepbystep.com/r/problem/view/c/loops/number_loops1"
+                                                class="card-link" target="_blank" rel="noopener">Number Loops 1</a>
+                                            <span class="badge bg-primary">Mandatory</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                            <a href="https://www.codestepbystep.com/r/problem/view/c/loops/number_loops2"
+                                                class="card-link" target="_blank" rel="noopener">Number Loops 2</a>
+                                            <span class="badge bg-primary">Mandatory</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
+                                            <a href="https://www.codestepbystep.com/r/problem/view/c/loops/number_loops3"
+                                                class="card-link" target="_blank" rel="noopener">Number Loops 3</a>
+                                            <span class="badge bg-secondary">Optional</span>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h6 class="text-uppercase">Tuần 2</h6>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionMenu">
+                            <div class="accordion-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-3">Tải <a
+                                            href="https://github.com/coderschool-cs50/cs50/archive/refs/heads/week2.zip"
+                                            class="card-link" target="_blank" rel="noopener">file</a> về <a
+                                            href="https://cs50.dev/" target="_blank" rel="noopener"">CS50 Codespace</a> của bạn và làm bài tập.
+                                    </p>
+                                    <span class=" badge bg-primary mb-3">Mandatory</span>
+                                </div>
+                                <ul class="list-group">
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                        <code
+                                            id="wget-week2">wget https://github.com/coderschool-cs50/cs50/archive/refs/heads/week2.zip</code>
+                                        <button type="button" class="btn btn-primary btn-sm copy"
+                                            data-copy="#wget-week2"><i class="bi bi-clipboard"></i></button>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
+
+                                        <code id="unzip-week2">unzip week2.zip</code>
+                                        <button type="button" class="btn btn-primary btn-sm copy"
+                                            data-copy="#unzip-week2"><i class="bi bi-clipboard"></i></button>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                        <code id="rm-week2">rm week2.zip</code>
+                                        <button type="button" class="btn btn-primary btn-sm copy"
+                                            data-copy="#rm-week2"><i class="bi bi-clipboard"></i></button>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
+
+                                        <code id="cd-week2">cd cs50-week2/week2</code>
+                                        <button type="button" class="btn btn-primary btn-sm copy"
+                                            data-copy="#cd-week2"><i class="bi bi-clipboard"></i></button>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                        <code id="ls-week2">ls -l</code>
+                                        <button type="button" class="btn btn-primary btn-sm copy"
+                                            data-copy="#ls-week2"><i class="bi bi-clipboard"></i></button>
+                                    </li>
+                                </ul>
+                                <p class="mt-3">Kiểm tra xem mình có đủ 4 files như
+                                    hình
+                                </p>
+                                <img src="./assets/images/cs50-week2-exercises.png" class="img-fluid">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <h6 class="text-uppercase">Tuần 3</h6>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionMenu">
+                            <div class="accordion-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Tải <a
+                                            href="https://github.com/coderschool-cs50/cs50/archive/refs/heads/week3.zip"
+                                            class="card-link" target="_blank" rel="noopener">file</a> về <a
+                                            href="https://cs50.dev/" target="_blank" rel="noopener"">CS50 Codespace</a> của bạn và làm bài tập.
+                                    </p>
+                                    <span class=" badge bg-primary mb-3">Mandatory</span>
+                                </div>
+                                <ul class="list-group">
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                        <code
+                                            id="wget-week3">wget https://github.com/coderschool-cs50/cs50/archive/refs/heads/week3.zip</code>
+                                        <button type="button" class="btn btn-primary btn-sm copy"
+                                            data-copy="#wget-week3"><i class="bi bi-clipboard"></i></button>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
+
+                                        <code id="unzip-week3">unzip week3.zip</code>
+                                        <button type="button" class="btn btn-primary btn-sm copy"
+                                            data-copy="#unzip-week3"><i class="bi bi-clipboard"></i></button>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                        <code id="rm-week3">rm week3.zip</code>
+                                        <button type="button" class="btn btn-primary btn-sm copy"
+                                            data-copy="#rm-week3"><i class="bi bi-clipboard"></i></button>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
+
+                                        <code id="cd-week3">cd cs50-week3/week3</code>
+                                        <button type="button" class="btn btn-primary btn-sm copy"
+                                            data-copy="#cd-week3"><i class="bi bi-clipboard"></i></button>
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+
+                                        <code id="ls-week3">ls -l</code>
+                                        <button type="button" class="btn btn-primary btn-sm copy"
+                                            data-copy="#ls-week2"><i class="bi bi-clipboard"></i></button>
+                                    </li>
+                                </ul>
+                                <p class="mt-3">Kiểm tra xem mình có đủ 3 folders như hình</p>
+                                <img src="./assets/images/cs50-week3-exercises.png" class="img-fluid">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <h6 class="text-uppercase">Tuần 4</h6>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionMenu">
+                            <div class="accordion-body">
+                                <p>Đang cập nhật</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <h6 class="text-uppercase">Tuần 5</h6>
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#accordionMenu">
+                            <div class="accordion-body">
+                                <p>Đang cập nhật</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-lg-block d-none">
+                <div class="card shadow ">
+                    <div class="card-body">
+                        <h4 class="card-title">Mục Lục:</h4>
+                        <div class="list-group list-group-flush overflow-x-scroll">
+                            <a class="list-group-item list-group-item-action menu list-group-item-primary"
+                                href="#headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">Nửa Đầu Tuần 1</a>
+
+                            <a class="list-group-item list-group-item-action menu" href="#headingTwo"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                aria-controls="collapseTwo">Nửa Sau Tuần 1</a>
+
+                            <a class="list-group-item list-group-item-action menu" href="#headingThree"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
+                                aria-controls="collapseThree">Tuần 2</a>
+
+                            <a class="list-group-item list-group-item-action menu" href="#headingFour"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+                                aria-controls="collapseFour">Tuần 3</a>
+
+                            <a class="list-group-item list-group-item-action menu" href="#headingFive"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true"
+                                aria-controls="collapseFive">Tuần 4</a>
+
+                            <a class="list-group-item list-group-item-action menu" href="#headingSix"
+                                data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true"
+                                aria-controls="collapseSix">Tuần 5</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

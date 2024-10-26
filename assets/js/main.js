@@ -143,11 +143,16 @@
 
                     navigator.clipboard.writeText(textToCopy).then(() => {
                         copyButton.classList.replace("btn-primary", "btn-outline-primary");
+                        copyButton.setAttribute('data-bs-original-title', 'Copied!');
 
                         const icon = copyButton.querySelector("i");
                         if (icon) {
                             icon.classList.replace("bi-clipboard", "bi-clipboard-check");
                         }
+
+                        setTimeout(() => {
+                            copyButton.classList.replace("btn-outline-primary", "btn-primary");
+                        }, 1000);
                     });
                 })
             });

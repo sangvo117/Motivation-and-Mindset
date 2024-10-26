@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <title>Khóa CS50x</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <div class="navbar navbar-expand-lg sticky-top bg-primary" data-bs-theme="dark">
+        <div class="container">
+            <a href="https://www.coderschool.vn/vi/cs50" class="navbar-brand" target="_blank" data-bs-toggle="tooltip"
+                data-bs-placement="bottom" data-bs-original-title="Trang chủ của CoderScool">Trại Code x
+                CoderSchool</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarResponsive" style="">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Tư Duy và Động Lực</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="cs50"
+                            aria-expanded="false">Khóa CS50</a>
+                        <div class="dropdown-menu" aria-labelledby="cs50">
+                            <a class="dropdown-item" href="./cs50X.html">CS50x 2024</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="tips"
+                            aria-expanded="false">Hướng dẫn</a>
+                        <div class="dropdown-menu" aria-labelledby="tips">
+                            <a class="dropdown-item" href="./askingTechnicalQuestions.html">Đặt Câu
+                                Hỏi Trên Discord</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./accessingCs50Codespace.html">Truy Cập CS50
+                                Codespace</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                        <hr class="d-lg-none my-2 text-white-50">
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="helpful_links"
+                            aria-expanded="false">Helpful Links</a>
+                        <div class="dropdown-menu" aria-labelledby="helpful_links">
+                            <a class="dropdown-item" href="https://platform.coderschool.vn/v2/auth/sign-in"><i
+                                    class="bi bi-mortarboard"></i>
+                                CoderSchool Platform</a>
+                            <a class="dropdown-item" href="./additionalPractice.html"><i class="bi bi-book"></i>
+                                Bài Tập Làm Thêm</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" target="_blank" rel="noopener" href="https://cs50.me/cs50x"><i
+                                    class="bi bi-clipboard2-data"></i> Xem Tiến Độ Hiện Tại</a>
+                            <a class="dropdown-item" target="_blank" rel="noopener" href="https://cs50.ai/"><i
+                                    class="bi bi-laptop"></i> CS50 AI</span></a>
+                            <a class="dropdown-item" target="_blank" rel="noopener" href="https://cs50.dev/"><i
+                                    class="bi bi-terminal"></i> CS50 CodeSpace</a>
+                            <a class="dropdown-item" target="_blank" rel="noopener" href="https://manual.cs50.io/"><i
+                                    class="bi bi-c-square"></i> CS50 Manual Pages</a>
+                            <a class="dropdown-item" target="_blank" rel="noopener"
+                                href="https://cs50.statuspage.io/"><i class="bi bi-activity"></i> CS50 Status Page</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" target="_blank" rel="noopener" href="./helpfulLinks.html"><i
+                                    class="bi bi-three-dots"></i> More Helpful Links</a>
+                        </div>
+                    </li>
+                    <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                        <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                        <hr class="d-lg-none my-2 text-white-50">
+                    </li>
+                    <li class="nav-item dropdown" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-original-title="Chọn Giao Diện">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="theme-menu"
+                            aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
+                            aria-label="Toggle theme">
+                            <i class="bi bi-circle-half"></i>
+                            <span class="d-lg-none ms-2">Giao Diện</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="warning" aria-pressed="false">
+                                    <i class="bi bi-sun-fill"></i><span class="ms-2">Sáng</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center"
+                                    data-bs-theme-value="dark" aria-pressed="true">
+                                    <i class="bi bi-moon-stars-fill"></i><span class="ms-2">Tối</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <header>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-sm-6">
+                    <h1>CS50x Links</h1>
+                    <figcaption class="blockquote-footer mt-2">
+                        Simplicity is the soul of efficiency.
+                    </figcaption>
+                </div>
+            </div>
+        </header>
+        <div class="row mt-5">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tuần</th>
+                            <th scope="col"><span class="text-warning">Chủ Đề</span></th>
+                            <th scope="col">Bài Tập</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>Trang chủ</td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/" target="_blank"><span
+                                        class="text-warning">CS50X</span></a></td>
+
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/project/"
+                                    target="_blank">Final Project</a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/0/"
+                                    target="_blank">Tuần 0</a></td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/0/"
+                                    target="_blank"><span class="text-warning">Scratch</span></a></td>
+
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/0/"
+                                    target="_blank">Problem Set 0</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/1/"
+                                    target="_blank">Tuần 1</a></td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/1/"
+                                    target="_blank"><span class="text-warning">C</span></a></td>
+
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/1/"
+                                    target="_blank">Problem Set 1</a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/2/"
+                                    target="_blank">Tuần 2</a>
+                            </td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/2/"
+                                    target="_blank"><span class="text-warning">Arrays</span></a>
+                            </td>
+
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/2/"
+                                    target="_blank">Problem Set 2</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/3/"
+                                    target="_blank">Tuần 3</a></td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/3/"
+                                    target="_blank"><span class="text-warning">Algorithms</span></a></td>
+
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/3/"
+                                    target="_blank">Problem Set 3</a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/4/"
+                                    target="_blank">Tuần 4</a></td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/4/"
+                                    target="_blank"><span class="text-warning">Memory</span></a></td>
+
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/4/"
+                                    target="_blank">Problem Set 4</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/5/"
+                                    target="_blank">Tuần 5</a></td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/5/"
+                                    target="_blank"><span class="text-warning">Data Structures</span></a></td>
+
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/5/"
+                                    target="_blank">Problem Set 5</a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/6/"
+                                    target="_blank">Tuần 6</a>
+                            </td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/6/"
+                                    target="_blank"><span class="text-warning">Python</span></a>
+                            </td>
+
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/6/"
+                                    target="_blank">Problem Set 6</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/ai/"
+                                    target="_blank">Tuần 6.5</a>
+                            </td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/ai/"
+                                    target="_blank"><span class="text-warning">Artificial
+                                        Intelligence</span></a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/7/"
+                                    target="_blank">Tuần 7</a></td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/7/"
+                                    target="_blank"><span class="text-warning">SQL</span></a></td>
+
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/7/"
+                                    target="_blank">Problem Set 7</a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/8/"
+                                    target="_blank">Tuần 8</a></td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/8/"
+                                    target="_blank"><span class="text-warning">HTML, CSS, JavaScript</span></a></td>
+
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/8/"
+                                    target="_blank">Problem Set 8</a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/9/"
+                                    target="_blank">Tuần 9</a></td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/9/"
+                                    target="_blank"><span class="text-warning">Flask</span></a></td>
+
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/psets/9/"
+                                    target="_blank">Problem Set 9</a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/10/"
+                                    target="_blank">Tuần 10</a></td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/weeks/10/"
+                                    target="_blank"><span class="text-warning">Cybersecurity</span></a></td>
+                            <td><a class="dropdown-item" href="https://cs50.harvard.edu/x/2024/practice/"
+                                    target="_blank">Additional Practice</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

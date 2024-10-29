@@ -5,17 +5,12 @@
  */
 
 (() => {
-    "use strict";
+    "use strict"
 
-    const tooltipTriggerList = document.querySelectorAll(
-        '[data-bs-toggle="tooltip"]'
-    );
-    const tooltipList = [...tooltipTriggerList].map(
-        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-    );
-
+    const tooltipTriggerList = document.querySelectorAll("[data-bs-toggle='tooltip']");
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
     const getStoredTheme = () => localStorage.getItem("theme");
-    const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
+    const setStoredTheme = theme => localStorage.setItem("theme", theme);
 
     const getPreferredTheme = () => {
         const storedTheme = getStoredTheme();
@@ -23,23 +18,18 @@
             return storedTheme;
         }
 
-        return window.matchMedia("(prefers-color-scheme: dark)").matches
-            ? "dark"
-            : "light";
-    };
+        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
 
-    const setTheme = (theme) => {
+    const setTheme = theme => {
         if (theme === "auto") {
-            document.documentElement.setAttribute(
-                "data-bs-theme",
-                window.matchMedia("(prefers-color-scheme: dark)").matches
-                    ? "dark"
-                    : "light"
-            );
+            document.documentElement.setAttribute("data-bs-theme", (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
         } else {
             document.documentElement.setAttribute("data-bs-theme", theme);
         }
-    };
+    }
+
+    setTheme(getPreferredTheme())
 
     const showActiveTheme = (theme, focus = false) => {
         const themeSwitcher = document.querySelector("#bd-theme");
@@ -50,14 +40,10 @@
 
         const themeSwitcherText = document.querySelector("#bd-theme-text");
         const activeThemeIcon = document.querySelector(".theme-icon-active use");
-        const btnToActive = document.querySelector(
-            `[data-bs-theme-value="${theme}"]`
-        );
-        const svgOfActiveBtn = btnToActive
-            .querySelector("svg use")
-            .getAttribute("href");
+        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+        const svgOfActiveBtn = btnToActive.querySelector("svg use").getAttribute("href");
 
-        document.querySelectorAll("[data-bs-theme-value]").forEach((element) => {
+        document.querySelectorAll("[data-bs-theme-value]").forEach(element => {
             element.classList.remove("active");
             element.setAttribute("aria-pressed", "false");
         });
@@ -73,6 +59,13 @@
         }
     };
 
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+        const storedTheme = getStoredTheme();
+        if (storedTheme !== "light" && storedTheme !== "dark") {
+            setTheme(getPreferredTheme());
+        }
+    });
+
     window
         .matchMedia("(prefers-color-scheme: dark)")
         .addEventListener("change", () => {
@@ -85,14 +78,15 @@
     window.addEventListener("DOMContentLoaded", () => {
         showActiveTheme(getPreferredTheme());
 
-        document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
-            toggle.addEventListener("click", () => {
-                const theme = toggle.getAttribute("data-bs-theme-value");
-                setStoredTheme(theme);
-                setTheme(theme);
-                showActiveTheme(theme, true);
+        document.querySelectorAll("[data-bs-theme-value]")
+            .forEach(toggle => {
+                toggle.addEventListener("click", () => {
+                    const theme = toggle.getAttribute("data-bs-theme-value");
+                    setStoredTheme(theme);
+                    setTheme(theme);
+                    showActiveTheme(theme, true);
+                });
             });
-        });
 
         function updateListGroupClasses(divId) {
             let listGroupItems = document.querySelectorAll(".menu");
@@ -143,7 +137,7 @@
 
                     navigator.clipboard.writeText(textToCopy).then(() => {
                         copyButton.classList.replace("btn-primary", "btn-outline-primary");
-                        copyButton.setAttribute('data-bs-original-title', 'Copied!');
+                        copyButton.setAttribute("data-bs-original-title", "Copied!");
 
                         const icon = copyButton.querySelector("i");
                         if (icon) {
